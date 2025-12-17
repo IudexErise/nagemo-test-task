@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__hero {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.header__content {
+  max-width: 1172px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 28px;
+  display: flex;
+  gap: 1px;
+}
+.header__logo--white {
+  color: white;
+}
+.header__logo--blue {
+  color: rgb(66, 169, 237);
+}
+.header__nav {
+  max-width: 425px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-item {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+.header__nav-item--current {
+  color: rgb(67, 171, 240);
+}
+
+/*# sourceMappingURL=main.css.map */
