@@ -1,5 +1,15 @@
-body {
+body,
+p,
+h1,
+h2 {
   margin: 0;
+}
+
+%container {
+  width: 100%;
+  max-width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -20,14 +30,18 @@ body {
   }
 
   &__content {
-    max-width: 1172px;
-    width: 100%;
+    @extend %container;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
+    display: flex;
+    gap: 1px;
+  }
+
+  &__logo-text {
     font-family: Raleway;
     font-weight: 800;
     font-size: 28px;
@@ -60,5 +74,124 @@ body {
     &--current {
       color: rgba(67, 171, 240, 1);
     }
+  }
+}
+
+.main {
+  margin-top: 103px;
+  display: flex;
+  flex-direction: column;
+
+  &__hero {
+    @extend %container;
+    margin-bottom: 202px;
+  }
+
+  &__hero-content {
+    max-width: 780px;
+  }
+
+  &__headline {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 80px;
+
+    &--highlight {
+      color: rgb(62, 156, 220);
+    }
+  }
+
+  &__description {
+    margin-bottom: 80px;
+  }
+
+  &__description-text {
+    font-family: Lato;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    &--bold {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button {
+    width: 183px;
+    height: 43px;
+    border-radius: 4px;
+    font-family: Lato;
+    font-size: 13px;
+
+    &--blue {
+      background: rgba(62, 156, 220, 1);
+      color: white;
+      border: 1px solid white;
+    }
+
+    &--white {
+      background: white;
+      color: rgba(42, 43, 48, 1);
+      border: 1px solid rgba(42, 43, 48, 1);
+    }
+  }
+}
+
+.order {
+  background: rgba(39, 39, 51, 1);
+  margin-top: -48px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../public/world.png") center / cover no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  &__content {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__headline {
+    margin-top: 121px;
+    font-family: Lato;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 30px;
+
+    &--highlight {
+      color: rgb(62, 156, 220);
+    }
+  }
+
+  &__headline-subtext {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(187, 187, 187, 1);
+    margin-bottom: 80px;
+  }
+
+  &__steps {
+    display: flex;
+    gap: 12px;
+    align-items: center;
   }
 }
