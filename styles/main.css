@@ -11,7 +11,7 @@ h2 {
   margin: 0;
 }
 
-.order__content, .main__inner, .header__content {
+.footer__container, .order__content, .main__inner, .header__content {
   width: 100%;
   max-width: 1172px;
   margin-left: auto;
@@ -286,6 +286,32 @@ h2 {
   border: 1px solid rgb(255, 255, 255);
   color: white;
   align-self: center;
+}
+
+.footer {
+  height: 80px;
+  background-color: rgb(61, 64, 80);
+  display: flex;
+  align-items: center;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+.footer__text--sub {
+  color: rgb(195, 195, 195);
+}
+.footer__entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
