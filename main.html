@@ -8,7 +8,6 @@
   </head>
   <body>
     <header class="header">
-      <img src="./public/bg-image.png" alt="" class="header__hero" />
       <div class="header__content">
         <div class="header__logo">
           <span class="header__logo-text header__logo-text--white"
@@ -28,30 +27,37 @@
     </header>
     <main class="main">
       <section class="main__hero">
-        <div class="main__hero-content">
-          <h1 class="main__headline">
-            <span class="main__headline main__headline--highlight"
-              >LOREM IPSUM </span
-            >DOLOR SIT AMETCONSECTETUR
-            <span class="main__headline main__headline--highlight"
-              >ADIPISCING</span
-            >
-          </h1>
-          <div class="main__description">
-            <p class="main__description-text main__description-text--bold">
-              At vero eos et accusamus et iusto odio dignissimos ducimus!
-            </p>
-            <p class="main__description-text">- Totam rem aperiam eaque ipsa</p>
-            <p class="main__description-text">
-              - Sit voluptatem accusantium doloremque laudantium
-            </p>
-            <p class="main__description-text">
-              - Sed ut perspiciatis, unde omnis iste natus error
-            </p>
-          </div>
-          <div class="main__buttons">
-            <button class="main__button main__button--blue">ЗАКАЗАТЬ</button>
-            <button class="main__button main__button--white">ПОДРОБНЕЕ</button>
+        <img src="./public/bg-image.png" alt="" class="main__img" />
+        <div class="main__inner">
+          <div class="main__hero-content">
+            <h1 class="main__headline">
+              <span class="main__headline main__headline--highlight"
+                >LOREM IPSUM </span
+              >DOLOR SIT AMETCONSECTETUR
+              <span class="main__headline main__headline--highlight"
+                >ADIPISCING</span
+              >
+            </h1>
+            <div class="main__description">
+              <p class="main__description-text main__description-text--bold">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+              </p>
+              <p class="main__description-text">
+                - Totam rem aperiam eaque ipsa
+              </p>
+              <p class="main__description-text">
+                - Sit voluptatem accusantium doloremque laudantium
+              </p>
+              <p class="main__description-text">
+                - Sed ut perspiciatis, unde omnis iste natus error
+              </p>
+            </div>
+            <div class="main__buttons">
+              <button class="main__button main__button--blue">ЗАКАЗАТЬ</button>
+              <button class="main__button main__button--white">
+                ПОДРОБНЕЕ
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +72,105 @@
           <p class="order__headline-subtext">
             Перед заполнением формы ознакомьтесь с нашей схемой работы!
           </p>
-          <div class="order__steps"></div>
+          <div class="order__steps">
+            <div class="order__step">
+              <div class="order__step-img">
+                <img src="./public/1.svg" alt="" />
+              </div>
+              <span class="order__details">Lorem ipsum dolorsit amet</span>
+            </div>
+            <img src="./public/dots.svg" alt="" class="order__dots" />
+            <div class="order__step">
+              <div class="order__step-img">
+                <img src="./public/2.svg" alt="" />
+              </div>
+              <span class="order__details">Сonsecteturadipiscing elit</span>
+            </div>
+            <img src="./public/dots.svg" alt="" class="order__dots" />
+            <div class="order__step">
+              <div class="order__step-img">
+                <img src="./public/3.svg" alt="" />
+              </div>
+              <span class="order__details">Sed do eiusmod tempor</span>
+            </div>
+            <img src="./public/dots.svg" alt="" class="order__dots" />
+            <div class="order__step">
+              <div class="order__step-img">
+                <img src="./public/4.svg" alt="" />
+              </div>
+              <span class="order__details">Esse cillum doloreeu fugiat</span>
+            </div>
+            <img src="./public/dots.svg" alt="" class="order__dots" />
+            <div class="order__step">
+              <div class="order__step-img">
+                <img src="./public/5.svg" alt="" />
+              </div>
+              <span class="order__details"
+                >Excepteur sint occaecat cupidatat non proident</span
+              >
+            </div>
+          </div>
+          <form class="order__form">
+            <div class="order__form-inputs">
+              <select class="order__select" name="service">
+                <option value="" disabled selected>Выберите тип системы</option>
+                <option>Sed ut perspiciatis</option>
+                <option>Nemo enim ipsam</option>
+                <option>Et harum quidem</option>
+                <option>Temporibus autem</option>
+                <option>Itaque earum rerum</option>
+              </select>
+              <input
+                class="order__input"
+                placeholder="Ваш e-mail"
+                name="email"
+                type="email"
+              />
+              <input
+                class="order__input"
+                placeholder="Ваше имя"
+                name="name"
+                type="text"
+              />
+            </div>
+            <div class="order__range-and-file">
+              <div class="order__container">
+                <div class="order__range-container">
+                  <div class="order__container">
+                    <span class="order__range-text"
+                      >Sed ut perspiciatis, unde omnis iste natus</span
+                    >
+                    <span class="order__range-text">77%</span>
+                  </div>
+                  <input type="range" class="order__range" name="range" />
+                </div>
+                <button
+                  class="order__button order__button--file"
+                  onclick="alert('File')"
+                >
+                  <svg
+                    width="18"
+                    height="20"
+                    viewBox="0 0 18 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.3839 4.24107L12.9018 0.758929C12.4888 0.345982 11.6629 0 11.0714 0H1.07143C0.479911 0 0 0.479912 0 1.07143V18.9286C0 19.5201 0.479911 20 1.07143 20H16.0714C16.6629 20 17.1429 19.5201 17.1429 18.9286V6.07143C17.1429 5.47991 16.7969 4.65402 16.3839 4.24107ZM11.4286 1.51786C11.6183 1.58482 11.808 1.68527 11.8862 1.76339L15.3795 5.2567C15.4576 5.33482 15.558 5.52455 15.625 5.71429H11.4286V1.51786ZM15.7143 18.5714H1.42857V1.42857H10V6.07143C10 6.66295 10.4799 7.14286 11.0714 7.14286H15.7143V18.5714ZM4.28571 8.92857V9.64286C4.28571 9.84375 4.44197 10 4.64286 10H12.5C12.7009 10 12.8571 9.84375 12.8571 9.64286V8.92857C12.8571 8.72768 12.7009 8.57143 12.5 8.57143H4.64286C4.44197 8.57143 4.28571 8.72768 4.28571 8.92857ZM12.5 11.4286H4.64286C4.44197 11.4286 4.28571 11.5848 4.28571 11.7857V12.5C4.28571 12.7009 4.44197 12.8571 4.64286 12.8571H12.5C12.7009 12.8571 12.8571 12.7009 12.8571 12.5V11.7857C12.8571 11.5848 12.7009 11.4286 12.5 11.4286ZM12.5 14.2857H4.64286C4.44197 14.2857 4.28571 14.442 4.28571 14.6429V15.3571C4.28571 15.558 4.44197 15.7143 4.64286 15.7143H12.5C12.7009 15.7143 12.8571 15.558 12.8571 15.3571V14.6429C12.8571 14.442 12.7009 14.2857 12.5 14.2857Z"
+                      fill="#272733"
+                    />
+                  </svg>
+                  ПРИКРЕПИТЬ ФАЙЛ
+                </button>
+              </div>
+            </div>
+            <button
+              class="order__button order__button--send"
+              onclick="alert('Send')"
+            >
+              ОТПРАВИТЬ
+            </button>
+          </form>
         </div>
       </section>
     </main>
