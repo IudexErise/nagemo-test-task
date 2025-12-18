@@ -280,6 +280,10 @@ h2 {
 .order__button--file {
   background: white;
   border: 2px solid rgb(62, 156, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .order__button--send {
   background: rgb(62, 156, 220);
